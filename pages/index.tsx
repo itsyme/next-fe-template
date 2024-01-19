@@ -64,7 +64,7 @@ const Home = () => {
         <ScrollArea className="max-w-screen-xl">
           <div className="flex gap-4 w-max mb-6">
             {solutions?.map((solution, index) => (
-              <ClickableCard key={index} title={solution.title} description={solution.description}/>
+              <ClickableCard key={index} id={solution.id} title={solution.title} description={solution.description}/>
             ))}
           </div>
           <ScrollBar orientation="horizontal"/>
