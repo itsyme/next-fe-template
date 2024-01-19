@@ -43,9 +43,7 @@ const About = () => {
                     <div className="flex justify-center py-10">
                         <Drawer>
                             <DrawerTrigger>
-                                <Button>
-                                    View Contributors
-                                </Button>
+                              View Contributors
                             </DrawerTrigger>
                             <DrawerContent>
                                 <DrawerHeader>
