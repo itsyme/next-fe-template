@@ -1,7 +1,4 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import Header from "@/components/header";
-import DefaultTemplate from "@/components/templates/default-template";
 import Hero from "@/components/hero";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import {
