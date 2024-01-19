@@ -32,25 +32,29 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
+                <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink
-                    onClick={() => router.push("/")}
-                    className="px-5 hover:cursor-pointer"
+                    className={navigationMenuTriggerStyle() + " px-5"}
                   >
                     <text className="text-lg">Home</text>
                   </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink
-                    onClick={() => router.push("/about")}
-                    className="px-5 hover:cursor-pointer"
+                    className={navigationMenuTriggerStyle() + " px-5"}
                   >
                     <text className="text-lg">About</text>
                   </NavigationMenuLink>
+                </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <Dialog>
-            <DialogTrigger className="px-1">
-              Log In
-            </DialogTrigger>
+              <DialogTrigger asChild>
+                <Button className="px-4 text-lg">Log In</Button>
+              </DialogTrigger>
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>
