@@ -48,7 +48,7 @@ const Header = () => {
                                         </text>
                                     </DialogTitle>
                                 </DialogHeader>
-                                <div className="py-6 w-full">
+                                <div className="py-1 w-full">
                                     <Button className="w-full">
                                         Login with Google
                                     </Button>
